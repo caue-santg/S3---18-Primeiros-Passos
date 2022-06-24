@@ -9,14 +9,14 @@ let total = refrigerante + macarrao + ervilha + arroz + feijao + vinho
 
 console.log(total)
 
-if(total % 1 == 0 ){
-    console.log(`Total é ${total}, Cada amigo paga a parte igual da Compra`)
+if(total % 2 == 1 ){
+    console.log(`Total é ${total}, cada amigo deverá pagar metade do valor total da compra, incluindo o vinho.`)
 }else{
-    console.log(`O total é ${total}, Você pagará metade e seu amigo pagará metade mais o valor do vinho`)
+    console.log(`O total é ${total}, você pagará somente a metade e seu amigo pagará a metade mais o valor do vinho.`)
 }
     //------------Extra
 
-/*
+
  let precoRefrigerante = parseFloat(prompt("Digite o valor do Refrigerante"))
 let quantidadeRefrigerante = parseInt(prompt("Quantas Unidades ?"))
 let totalRefrigerante = precoRefrigerante * quantidadeRefrigerante
@@ -45,4 +45,3 @@ let totalVinho = (precoVinho * quantidadeVinho)
 let precoTotal = totalMarcarrao + totalRefrigerante + totalErvilha +  totalArroz + totalfeijao  + totalVinho
 
 alert(`Valor total a ser pago: ${precoTotal}`) 
-*/
